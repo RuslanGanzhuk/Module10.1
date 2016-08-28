@@ -10,11 +10,11 @@ public class TextWriter {
 
    private BufferedWriter fileWriter;
 
-    public void writerText(String a){
+    public void writerText(Object a){
 
         try{
-            fileWriter = new BufferedWriter(new FileWriter(TEXT));
-            fileWriter.write(a + " ");
+            fileWriter = new BufferedWriter(new FileWriter(TEXT,true));
+            fileWriter.write(a.toString() + " ");
             fileWriter.flush();
         }catch(IOException e){
             System.out.println("Error file not found!!!");
