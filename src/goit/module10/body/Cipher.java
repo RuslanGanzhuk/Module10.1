@@ -1,7 +1,7 @@
 package goit.module10.body;
 
 public class Cipher {
-    private char[] arrayCipher = new char[10];
+    private char[] arrayCipher;
     private final int keyCipher = 3;
     private String cipherText;
 
